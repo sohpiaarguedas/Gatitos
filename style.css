@@ -1,0 +1,53 @@
+body{
+    background-image: url(fondo2.jpg);
+      
+}
+body::before {
+  content: "";
+  position: fixed;   /* fijo para que quede siempre visible */
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url(fondo2.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;      /* aquí controlas la opacidad */
+  z-index: -1;       /* detrás del contenido */
+}
+
+
+h1{
+   
+    
+    
+
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+   
+  font-family: 'Press Start 2P', cursive;
+  font-size: 30px
+
+
+    
+}
+
+.container{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    height: 60vh;           /* Altura completa de la pantalla */
+    flex-direction: row;
+
+
+}
+
+.siames :hover, .esfinge:hover, .persa:hover, .siberiano:hover, .chartreux:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+button {
+  background: transparent; /* quita el fondo blanco del botón */
+  border: none; /* quita los bordes del botón */
+  padding: 0; /* quita el espacio interno */
+  cursor: pointer; /* mantiene el cursor de botón */
+  margin: 1px; 
+}
