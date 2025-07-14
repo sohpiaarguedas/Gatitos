@@ -51,3 +51,29 @@ button {
   cursor: pointer; /* mantiene el cursor de botón */
   margin: 1px; 
 }
+
+/* Ajustes para pantallas pequeñas (celulares) */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 20px;       /* Fuente más pequeña */
+    padding: 30px 10px;    /* Menos padding */
+  }
+
+  .container {
+    flex-direction: column;  /* Apila los botones verticalmente */
+    height: auto;            /* Que la altura se adapte */
+    gap: 15px;               /* Espacio entre botones */
+    padding: 10px;
+  }
+
+  .container button {
+    width: 80vw;             /* Botones más anchos, casi toda la pantalla */
+    max-width: 300px;
+    margin: 0 auto;          /* Centra los botones */
+  }
+
+  .container button img {
+    width: 100%;             /* La imagen ocupa todo el botón */
+    height: auto;
+  }
+}
